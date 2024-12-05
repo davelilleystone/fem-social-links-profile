@@ -31,7 +31,9 @@ main {
 article {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 27%;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
   background-color: var(--grey-800);
 }
 
@@ -46,16 +48,21 @@ img {
   border-radius: 50%;
 }
 
+header > p {
+  color: var(--green);
+}
+
 ul {
   list-style: none;
-  row-gap: 10px;
+  row-gap: 16px;
 }
 
 li {
   background-color: var(--grey-700);
+  border-radius: 0.5rem;
   width: 100%;
   text-align: center;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 li:hover {
@@ -65,5 +72,20 @@ li:hover {
 a {
   text-decoration: none;
   display: inline-block;
+  width: 100%;
+  padding: 0.75rem;
   color: var(--white);
+}
+
+.text-preset-1 {
+  font-size: 1.5rem;
+}
+
+.text-preset-2 {
+  font-size: 0.875rem;
+}
+
+.text-preset-2-bold {
+  font-size: 0.875rem;
+  font-weight: 700;
 }
